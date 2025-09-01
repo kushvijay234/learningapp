@@ -1,0 +1,114 @@
+{
+  
+  "questions": [
+    {
+      "id": 1,
+      "question": "Using linear search determine the position of 8, 1, 99 and 44 in the list [1, -2, 32, 8, 17, 19, 42, 13, 0, 44].",
+      "answer": {
+        "8": "Position 4",
+        "1": "Position 1",
+        "99": "Not found",
+        "44": "Position 10"
+      },
+      "explanation": "Linear search checks elements sequentially. Best case = 1 comparison, worst case = n comparisons."
+    },
+    {
+      "id": 2,
+      "question": "Use the linear search program to search the key = 8 in the list [42, -2, 32, 8, 17, 19, 42, 13, 8, 44].",
+      "answer": "Position 4 (first occurrence of 8).",
+      "explanation": "Linear search always returns the first occurrence of the matching element."
+    },
+    {
+      "id": 3,
+      "question": "Write a program that takes a list of 10 numbers and a key. Apply linear search.",
+      "answer": "Depends on input. If found → position returned, else 'Not found'.",
+      "explanation": "Program checks sequentially. Generic case demonstration."
+    },
+    {
+      "id": 4,
+      "question": "Write a program that takes a list of 10 integers and a key. Apply binary search.",
+      "answer": "Depends on input. If found → position returned, else 'Not found'.",
+      "explanation": "Binary search works only on sorted lists. Time complexity is O(log n)."
+    },
+    {
+      "id": 5,
+      "question": "For unsorted list [50, 31, 21, 28, 72, 41, 73, 93, 68, 43, 45, 78, 5, 17, 97, 71, 69, 61, 88, 75, 99, 44, 55, 9], apply linear search, sort and repeat, then apply binary search for keys 1, 5, 55, 99.",
+      "answer": {
+        "linear_unsorted": {
+          "1": "Not found (24 comparisons)",
+          "5": "Position 13",
+          "55": "Position 23",
+          "99": "Position 21"
+        },
+        "linear_sorted": {
+          "1": "Not found",
+          "5": "Position 1",
+          "55": "Position 12",
+          "99": "Position 24"
+        },
+        "binary_sorted": {
+          "1": "Not found (~5 iterations)",
+          "5": "Position 1 (~4 iterations)",
+          "55": "Position 12 (~4 iterations)",
+          "99": "Position 24 (~4 iterations)"
+        }
+      },
+      "explanation": "Linear search requires up to n comparisons, while binary search reduces work to log₂n comparisons."
+    },
+    {
+      "id": 6,
+      "question": "Given words [Perfect, Stupendous, Wondrous, Gorgeous, Awesome, Mirthful, Fabulous, Splendid, Incredible, Outstanding, Propitious, Remarkable, Stellar, Unbelievable, Super, Amazing], use linear search, sort and repeat, then apply binary search for Amazing, Perfect, Great, Wondrous.",
+      "answer": {
+        "linear_unsorted": {
+          "Amazing": "Position 16",
+          "Perfect": "Position 1",
+          "Great": "Not found",
+          "Wondrous": "Position 3"
+        },
+        "linear_sorted": {
+          "Amazing": "Position 1",
+          "Perfect": "Position 8",
+          "Great": "Not found",
+          "Wondrous": "Position 16"
+        },
+        "binary_sorted": {
+          "Amazing": "Position 1 (~4 iterations)",
+          "Perfect": "Position 8 (~4 iterations)",
+          "Great": "Not found (~4 iterations)",
+          "Wondrous": "Position 16 (~4 iterations)"
+        }
+      },
+      "explanation": "Binary search reduces comparisons compared to linear search in sorted data."
+    },
+    {
+      "id": 7,
+      "question": "Estimate comparisons in linear vs binary search for 2^30 records when key lies in the middle.",
+      "answer": {
+        "linear_search": "≈ 537 million comparisons",
+        "binary_search": "30 comparisons"
+      },
+      "explanation": "Binary search is exponentially faster than linear search for large datasets."
+    },
+    {
+      "id": 8,
+      "question": "Use hash function h(element) = element % 11 for [44, 121, 55, 33, 110, 77, 22, 66]. Search keys 11, 44, 88, 121.",
+      "answer": {
+        "44": "Present",
+        "121": "Present",
+        "11": "Not present",
+        "88": "Not present"
+      },
+      "explanation": "All elements map to remainder 0 → collisions occur. Requires collision handling."
+    },
+    {
+      "id": 9,
+      "question": "Country-Capital mapping using hash = length of country name. Check capitals of India, France, USA.",
+      "answer": {
+        "India": "New Delhi",
+        "France": "Paris",
+        "USA": "Not found"
+      },
+      "explanation": "Hash function stores based on string length. If no entry exists at index, search fails."
+    }
+  ]
+}
