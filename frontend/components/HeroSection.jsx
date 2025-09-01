@@ -1,4 +1,5 @@
 import React from "react";
+import image from '../src/assets/coursesbanner.jpg';
 
 const HeroSection = () => {
   return (
@@ -25,7 +26,7 @@ const HeroSection = () => {
         {/* Image / Illustration */}
         <div className="md:w-1/2 mb-10 md:mb-0 flex justify-center">
           <img
-            src="https://images.unsplash.com/photo-1581091870624-39b8e071a0a8?auto=format&fit=crop&w=600&q=80"
+            src={image}
             alt="Rural Education"
             className="rounded-xl shadow-lg w-full max-w-sm"
           />

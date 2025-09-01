@@ -1,0 +1,39 @@
+{
+  "python": [
+    {
+      "id": 1,
+      "question": "Which of the following is used to display output in Python?",
+      "options": ["echo()", "print()", "display()", "show()"],
+      "correct": "print()",
+      "explanation": "In Python, the built-in function print() is used to show output on the screen."
+    },
+    {
+      "id": 2,
+      "question": "Which symbol is used for comments in Python?",
+      "options": ["//", "#", "/* */", "<!-- -->"],
+      "correct": "#",
+      "explanation": "Python uses the hash (#) symbol to write single-line comments."
+    },
+    {
+      "id": 3,
+      "question": "What is the correct way to store text in a variable?",
+      "options": ["name = John", "name = 'John'", "name := John", "name == 'John'"],
+      "correct": "name = 'John'",
+      "explanation": "In Python, strings are written inside quotes, so 'John' must be in quotes."
+    },
+    {
+      "id": 4,
+      "question": "Which of these is a valid variable name?",
+      "options": ["2value", "my-name", "value2", "class"],
+      "correct": "value2",
+      "explanation": "Variable names cannot start with a number, contain hyphens, or use reserved keywords."
+    },
+    {
+      "id": 5,
+      "question": "What is the output of: print(2 + 3 * 2)?",
+      "options": ["10", "12", "8", "7"],
+      "correct": "8",
+      "explanation": "According to operator precedence, multiplication happens first: 3*2 = 6, then 2+6 = 8."
+    }
+  ]
+}
