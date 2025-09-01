@@ -10,7 +10,7 @@ const CoursesSection = () => {
   const handleQuiz = () => alert('Navigate to Quiz Page');
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 p-6">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 p-6">
       <CourseCard
         title="Data Structures"
         imageUrl={image}

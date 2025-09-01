@@ -2,8 +2,8 @@ import React from 'react';
 
 const CourseCard = ({ title, imageUrl, onLearnClick, onQuizClick }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm mx-auto">
-      <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+    <div className="bg-white rounded-lg shadow-md overflow-hidden max-w-sm mx-auto w-full">
+      <img src={imageUrl} alt={title} className="w-full object-cover" />
       <div className="p-4">
         <h3 className="text-xl font-semibold text-gray-800 mb-3">{title}</h3>
         <div className="flex justify-between">
